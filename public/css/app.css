@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    display:grid;
+    grid-template-columns: 60px 60% 40% ;
+    width:100%;
+}
+.menu{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-color:rgb(209, 227, 248) ;
+    padding-top: 20px;
+    min-height:100vh;
+    width:100%;
+
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    margin-bottom: 10px;
+}
+.search{
+    display: flex;
+    width:100%;
+    background-color:rgb(209, 227, 248) ;
+    margin:32px;
+}
+.search input{
+    border:none;
+    background-color:rgb(209, 227, 248) ;
+    padding:8px;
+    width:100%;
+}
+.search img{
+    padding: 8px;
+}
+.container-picture{
+    width: 100%;
+    justify-content: center;
+    margin:32px;
+}
+.banner{
+    position:relative;
+}
+.image{
+    height:200px;
+    z-index:5;
+}
+.image img{
+    width:100%;
+    height:100%;
+}
+.content{
+   position: absolute;
+   top:0;
+   left:0;
+   width:40%;
+   height:200px;
+   background-color: rgb(235, 131, 13);
+   z-index:10;
+   
+}
+.text{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    height:100%;
+}
+.text h1{
+    color:white;
+}
+.text h2{
+    color:blue;
+}
+.container-food{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 32px;
+    row-gap:32px;
+    margin: 0px 32px;
+    width:100%;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    
+}
+.item img{
+    width:100%;
+    height:148px;
+}
+.card-footer{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.footer{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    background-color:rgb(209, 227, 248) ;
+    width:100%;
+    min-height:100vh;
+}
+.streat{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.orders  h2{
+    padding-bottom:24px;
+}
+.time{
+    display:flex;
+    flex-direction:row;
+}
+.time ul li{
+    list-style-type: none;
+}
+.address-icon{
+    display: flex;
+    width:100%; 
+}
+.address-icon img{
+    justify-content: space-between;
+}
+.food-order{
+    display:flex;
+    flex-direction: row;
+}
+.theme{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.food-order{
+    display:flex;
+    flex-direction:row;
+    padding:16px 16px 0px 0px;
+}
+.food-order .image{
+  width:100px;
+  height:100px;
+  padding:8px;
+}
+.food-order .image img{
+    border-radius: 8px;
+}
+.book{
+    display:flex;
+    flex-direction: column; 
+}
+.book input{
+    border:none;
+    width:60px;
+    padding:4px;
+}
+.book img{
+    padding:4px 4px 0px 0px;
+}
+.book .price{
+    
+}
+
+
