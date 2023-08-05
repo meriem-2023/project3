@@ -4,7 +4,7 @@
 }
 .container{
     display:grid;
-    grid-template-columns: 60px 60% 40% ;
+    grid-template-columns: 60px 2fr 1fr ;
     width:100%;
 }
 .menu{
@@ -27,7 +27,11 @@
     display: flex;
     width:100%;
     background-color:rgb(209, 227, 248) ;
-    margin:32px;
+    margin-bottom:32px;
+    
+}
+.main{
+    padding:32px;
 }
 .search input{
     border:none;
@@ -41,10 +45,11 @@
 .container-picture{
     width: 100%;
     justify-content: center;
-    margin:32px;
+    
 }
 .banner{
     position:relative;
+    margin-bottom:32px;
 }
 .image{
     height:200px;
@@ -82,8 +87,8 @@
     grid-template-columns: repeat(3,1fr);
     column-gap: 32px;
     row-gap:32px;
-    margin: 0px 32px;
     width:100%;
+   
 }
 .item{
     display: flex;
@@ -105,71 +110,156 @@
     justify-content: right;
 }
 .footer{
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    background-color:rgb(209, 227, 248) ;
+    padding:32px;
+    background-color: rgb(178, 212, 241);
     width:100%;
     min-height:100vh;
 }
 .streat{
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    
 }
-.orders  h2{
-    padding-bottom:24px;
+
+.orders h2{
+    padding:0px 0px 0px 24px;
 }
-.time{
-    display:flex;
-    flex-direction:row;
+.time ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    
 }
 .time ul li{
-    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right:16px;
 }
 .address-icon{
     display: flex;
     width:100%; 
 }
-.address-icon img{
-    justify-content: space-between;
+.theme {
+    display: flex;
+    flex-direction: column;
+    padding:32px 0px;
 }
 .food-order{
     display:flex;
     flex-direction: row;
-}
-.theme{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-}
-.food-order{
-    display:flex;
-    flex-direction:row;
-    padding:16px 16px 0px 0px;
-}
-.food-order .image{
-  width:100px;
-  height:100px;
-  padding:8px;
-}
-.food-order .image img{
-    border-radius: 8px;
+    width:100%;
+    margin-bottom:32px;
+    border-radius:8px;
 }
 .book{
+    position: relative;
     display:flex;
     flex-direction: column; 
+    padding:0px 16px;
+    width:75%;
+}  
+.book-count{
+   display: flex;
+   margin-top: 10px;
+}
+.book-count .icon-add{
+    padding:8px 12px;
+    border-radius: 3px;
+    margin-right: 8px;
+    border:none;
 }
 .book input{
     border:none;
-    width:60px;
-    padding:4px;
+    width: 60px;
+    padding:8px 16px;
+    border-radius: 3px;
 }
-.book img{
-    padding:4px 4px 0px 0px;
+.food-order .image{
+    width: 25% !important;
+    height: 100px;
+}
+.food-order .image img{
+    border-radius:12px;
+    width:100%;
 }
 .book .price{
+    position: absolute;
+    right:0;
+    top:0;
+}
+.pay{ 
+  position: relative;
+  display: flex;
+  padding:8px 0px 0px 0px  ;
+
+}
+.pay .payment{
+    position: absolute;
+    top:0;
+    right:0;
+    padding:8px 0px 0px  0px;
+}
+.sub-total{
+    color:rgb(163, 171, 179);
+}
+.sub-total h5{
+    padding:8px 0px 0px 0px;
+}
+.promotion{
+    display: flex;
+    padding:8px;
+    justify-content: center;
+    background-color: rgb(236, 219, 236);
+    border:2px solid black;
+    margin:16px 0px 16px 0px;
+}
+.promotion p{
+    padding:8px 16px 0px 0px  ;
+}
+.promotion div{
+    padding:8px;
+    background-color: rgb(243, 149, 8);
+   
+}
+.promotion div img{
+    padding:0px 8px 0px 0px ;
+}
+.total{
+    position: relative;
+    display: flex;
+    padding:8px 0px 0px 0px  ;
+  
+}
+.total .price{
+    position: absolute;
+    top:0;
+    right:0;
+    padding:8px 0px 0px  0px;
+}
+.total h5{
+    color:rgb(163, 171, 179);
+}
+.check{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    padding:8px 0px 0px 0px  ;
     
 }
+.check button{
+    padding:16px;
+    background-color: rgb(243, 149, 8);
+    width:100%;
+    align-items: center;
+   
+}
+    
+
+
+
+
+
 
 

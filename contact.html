@@ -5,31 +5,230 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frestaurant</title>
     <style>
-     div {
-        display:grid;
-        grid-template-rows: 1fr;
-        border:none;
+     .footer{
+    padding:32px;
+   background-color: rgb(178, 212, 241);
+    width:100%;
+    min-height:100vh;
+}
+.streat{
+    display:flex;
+    flex-direction: column;
+    
+}
+.orders  h2{
+    padding:0px 0px 0px 24px;
+}
+.time ul {
+ display: flex;
+ align-items: center;
+ flex-direction: row;
+ list-style-type: none;
+}
+.time ul li{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right:16px;
+}
+.address-icon{
+    display: flex;
+    width:100%; 
+}
+.theme{
+    display:flex;
+    flex-direction: column;
+    padding:32px 0px;
+}
+.food-order{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    margin-bottom: 32px;
+    border-radius:8px;
+}
+.theme{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
 
-     }
-     button{
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        align-items: center;
-        margin:32px;
-        background-color: aliceblue;
-     }
-     button input{
-        border:none;
-        background-color: aliceblue;
-        
-     }
+.book{
+    position: relative;
+    display:flex;
+    flex-direction: column; 
+    padding:0px 16px;
+    width:75%;
+}
+.book-count{
+    display: flex;
+   margin-top: 10px;
+}
+.book-count .icon-add{
+    padding:8px 12px;
+    border-radius: 3px;
+    margin-right: 8px;
+    border:none;
+}
+.book input{
+    border:none;
+    width: 60px;
+    padding:8px 16px;
+    border-radius: 3px;
+
+}
+.food-order .image{
+    width: 25% !important;
+    height: 100px;
+}
+.food-order .image img{
+    border-radius:12px;
+    width:100%;
+}
+.book .price{
+    position: absolute;
+    right:0;
+    top:0;
+}
+.pay {
+    position: relative;
+    display:flex;
+    flex-direction: column; 
+     padding:8px 0px 0px 0px;
+}
+.sub-total{
+    display:flex;
+    flex-direction: column;
+}
+.sub-total h5{
+    color:rgb(116, 121, 126);
+}
+.pay .payment{
+    position: absolute;
+    top:0;
+    right:0;
+    padding:8px 0px 0px 0px;
+}
+.promotion{
+    position: relative;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    border:2px solid black;
+    background-color: rgb(221, 226, 230);
+    padding:8px;
+    
+}
+.promotion p{
+    padding:0px 20px 0px 0px;
+}
+.promotion .coupon{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(235, 121, 15);
+    padding:4px;
+}
+.total{
+    position: relative;
+    display:flex;
+    flex-direction:row;
+    
+}
+.total div h5{
+    color:rgb(116, 121, 126);
+}
+.total  .payment{
+     position: absolute;
+     right:0;
+     top:0;
+}
+.check {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(235, 121, 15) ;
+  padding:16px;
+  
+}
+
+
+
+
+
+
+
     </style>
 </head>
 <body>
-    <div>
-       <button><a href=""><img src="./public/images/icons/search.png" width="16"/></a><input type="search" placeholder="wath would you like to eat ?"></button>
+    <div class="footer">
+        <div class="order">
+            <div class="orders"><h2>My orders</h2></div>
+            <div class="address">
+                <div><h4>Delivry address</h4></div>
+                 <div class="streat">
+                    <div class="address-icon">
+                       <h1>1341 Morris Streat</h1>
+                       <img src="./public/images/icons/icon.png"/>
+                    </div>
+                    <div class="time">
+                        <ul>
+                            <li><img src="./public/images/icons/time.png" width="22">40 mins</li>
+                            <li><img src="./public/images/icons/Nearby.png" width="22"/>4 kms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="theme">
+              <div class="food-order">
+                <div class="image"><img src="./public/images/food/delicious cheese burger.webp"></div>
+                <div class="book">
+                    <div>
+                        <h3>Cheese burger</h3>
+                        <h3>Extra choose</h3>
+                    </div>
+                    <div class="book-count">
+                        <button type="button" class="icon-add">X</button>
+                        <div>
+                          <input type="number" value="1" min="1" max="6"/>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="food-order">
+                <div class="image"><img src="./public/images/food/delicious cheese burger.webp"></div>
+                <div class="book">
+                    <div>
+                        <h3>Cheese burger</h3>
+                        <h3>Extra choose</h3>
+                    </div>
+                    <div class="book-count">
+                      <button type="button" class="icon-add">X</button>
+                      <div>
+                        <input type="number" value="1" min="1" max="6"/>
+                      </div>
+                      <div class="price">39$</div>
+                </div>
+            </div>
+            </div>
+            <hr>
+            <div class="pay">
+              <div class="sub-total"><h5>sub total</h5><h5>Dalivery Free</h5></div>
+              <div class="payment"><h2>162$</h2><h4>9$</h4></div>
+            </div>
+            <div class="promotion">
+                <p>Find Promotion</p>
+                <div class="coupon"><img src="./public/images/icons/coupon.png" width="22"><span>Add Coupon</span></div>
+           </div><hr>
+           <hr>
+           <div>
+              <div class="total">
+                <div><h5>Total</h5></div>
+                 <div class="payment"><h2>171$</h2></div>
+              </div>
+               <div class="check"><h3>Check out</h3></div>
+           </div>
+         
+        </div>
     </div>
-    
+</div>
 </body>
 </html>
